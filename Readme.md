@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Николай Ордин](https://up.htmlacademy.ru/htmlcss/32/user/1918861).
-* Наставник: `Павел Нюкало`.
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
 

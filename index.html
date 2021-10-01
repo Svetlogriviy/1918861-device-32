@@ -12,11 +12,11 @@
       <img class="page-header-logo" src="" alt="Логотип интернет-магазина гаджетов Девайс">
     </a>
     <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-      <input class="search-button" type="submit">
       <label>
         <span class="visually-hidden">Поиск</span>
         <input class="search-line" type="search" name="querry" placeholder="Поиск по сайту">
       </label>
+      <button class="search-button" type="submit">Найти</button>
     </form>
     <nav class="navigation">
       <ul class="navigation-list navigation-user">
@@ -51,20 +51,61 @@
     <h1 class="visually-hidden">Интернет-магазин гаджетов Девайс</h1>
     <section class="promo-slider">
       <h2 class="visually-hidden">Рекомендуем</h2>
-      <span class="promo-slider-number">01</span>
       <img class="slider-image" src="" alt="Квадрокоптер">
+      <img class="slider-image" src="" alt="Фитнес-браслет">
+      <img class="slider-image" src="" alt="Палка для селфи">
       <button class="slider-button slider-prev" type="button">
         <span class="visually-hidden">Предыдущее фото</span>
       </button>
       <button class="slider-button slider-next" type="button">
         <span class="visually-hidden">Следующее фото</span>
       </button>
+
+      <span class="promo-slider-number">01</span>
       <p class="promo-phrase">
         <b>Порхает как бабочка, жалит как пчела!</b>
       </p>
       <p class="promo-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
-        под стандартную камеру.</p>
+        под стандартную камеру.
+      </p>
       <a class="promo-details-link" href="#">Подробнее</a>
+      <dl class="promo-slider-feature-list">
+        <dt class="promo-slider-feature">Дальность полёта</dt>
+        <dd class="promo-slider-feature-value">800 м</dd>
+        <dt class="promo-slider-feature">Радиус поражения</dt>
+        <dd class="promo-slider-feature-value">50 м</dd>
+      </dl>
+
+      <span class="promo-slider-number">02</span>
+      <p class="promo-phrase">
+        <b>Худеем правильно!</b>
+      </p>
+      <p class="promo-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
+        соблюдать диету.
+      </p>
+      <a class="promo-details-link" href="#">Подробнее</a>
+      <dl class="promo-slider-feature-list">
+        <dt class="promo-slider-feature">Без подзарядки</dt>
+        <dd class="promo-slider-feature-value">48 часов</dd>
+      </dl>
+
+      <span class="promo-slider-number">03</span>
+      <p class="promo-phrase">
+        <b>Делай селфи, как Бен Стиллер!</b>
+      </p>
+      <p class="promo-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
+        метров длиной и весом всего 5 кг.
+      </p>
+      <a class="promo-details-link" href="#">Подробнее</a>
+      <dl class="promo-slider-feature-list">
+        <dt class="promo-slider-feature">Длина палки</dt>
+        <dd class="promo-slider-feature-value">8,5 м</dd>
+        <dt class="promo-slider-feature">Вес палки</dt>
+        <dd class="promo-slider-feature-value">5 кг</dd>
+        <dt class="promo-slider-feature">Материал</dt>
+        <dd class="promo-slider-feature-value">Карбон</dd>
+      </dl>
+
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
           <button class="slider-pagination-button slifer-pagination-button-current" type="button">
@@ -82,12 +123,6 @@
           </button>
         </li>
       </ol>
-      <dl class="promo-slider-feature-list">
-        <dt class="promo-slider-feature">Дальность полёта</dt>
-        <dd class="promo-slider-feature-value">800 м</dd>
-        <dt class="promo-slider-feature">Радиус поражения</dt>
-        <dd class="promo-slider-feature-value">50 м</dd>
-      </dl>
     </section>
     <section class="categories">
       <h2 class="visually-hidden">Категории товаров</h2>
@@ -125,10 +160,24 @@
           <button class="services-button" type="button">Кредит</button>
         </li>
       </ul>
+
       <h3 class="service-name">Доставка</h3>
       <p class="service-description">Мы с удовольствием доставим ваш товар прямо
         к вашему подъезду совершенно бесплатно! Ведь
-        мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        мы неплохо заработаем, поднимая его на ваш этаж.
+      </p>
+
+      <h3 class="service-name">Гарантия</h3>
+      <p class="service-description">Если из-за возгорания купленного у нас товара у вас
+        сгорит дом — не переживайте, мы выдадим вам новый.
+        Товар, не дом, конечно же.
+      </p>
+
+      <h3 class="service-name">Кредит</h3>
+      <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+        наиболее выгодные условия кредита. Выгодные для банка, разумеется.
+      </p>
+
     </section>
     <section class="delivery-on-order">
       <h2 class="visually-hidden">Доставка под заказ</h2>
@@ -169,7 +218,7 @@
         <label class="visually-hidden" for="newsletter-email">Email</label>
         <input class="newsletter-email-field" type="email" name="newsletter-email" id="newsletter-email"
           placeholder="Ваш e-mail" required>
-        <input class="newsletter-button" type="submit" value="Подписаться">
+        <button class="newsletter-button" type="submit">Подписаться</button>
         <span class="newsletter-free">Это бесплатно</span>
       </form>
     </section>

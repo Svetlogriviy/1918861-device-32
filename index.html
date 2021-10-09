@@ -4,12 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header-logo-link">
-      <img class="page-header-logo" src="" alt="Логотип интернет-магазина гаджетов Девайс">
+      <img class="page-header-logo" src="img/logo-black.svg" width="145" height="36"
+        alt="Логотип интернет-магазина гаджетов Девайс">
     </a>
     <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
       <label>
@@ -20,7 +22,7 @@
     </form>
     <nav class="navigation">
       <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
+        <li class="navigation-item user">
           <a class="navigation-link" href="#">Войти</a>
         </li>
         <li class="navigation-item">
@@ -54,9 +56,9 @@
     <h1 class="visually-hidden">Интернет-магазин гаджетов Девайс</h1>
     <section class="promo-slider">
       <h2 class="visually-hidden">Рекомендуем</h2>
-      <img class="slider-image" src="" alt="Квадрокоптер">
-      <img class="slider-image" src="" alt="Фитнес-браслет">
-      <img class="slider-image" src="" alt="Палка для селфи">
+      <img class="slider-image" src="img/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер">
+      <img class="slider-image" src="img/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
+      <img class="slider-image" src="img/slider/slider-3.png" width="560" height="560" alt="Палка для селфи">
       <button class="slider-button slider-prev" type="button">
         <span class="visually-hidden">Предыдущее фото</span>
       </button>
@@ -131,8 +133,12 @@
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="categories-list">
         <li class="categories-item">
+          <a class="categories-img vr" href="#"></a>
           <a class="categories-link" href="#">Виртуальная реальность</a>
         </li>
+        <!--Думаю, подразумевается, что при клике на картинку тоже осуществляется переход по ссылке.
+          В два разных <a> вложил, чтобы в будущем при формировании отступов пустое пространство
+            между картинкой и названием категории не было кликабельным-->
         <li class="categories-item">
           <a class="categories-link" href="catalog.html">Моноподы для селфи</a>
         </li>
@@ -164,11 +170,13 @@
         </li>
       </ul>
 
-      <h3 class="service-name">Доставка</h3>
-      <p class="service-description">Мы с удовольствием доставим ваш товар прямо
-        к вашему подъезду совершенно бесплатно! Ведь
-        мы неплохо заработаем, поднимая его на ваш этаж.
-      </p>
+      <div class="services-delivery">
+        <h3 class="service-name">Доставка</h3>
+        <p class="service-description">Мы с удовольствием доставим ваш товар прямо
+          к вашему подъезду совершенно бесплатно! Ведь
+          мы неплохо заработаем, поднимая его на ваш этаж.
+        </p>
+      </div>
 
       <h3 class="service-name">Гарантия</h3>
       <p class="service-description">Если из-за возгорания купленного у нас товара у вас
@@ -230,7 +238,8 @@
     <section class="page-footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <a class="page-footer-contacts-logo-link">
-        <img class="page-footer-contacts-logo" src="" alt="Логотип интернет-магазина гаджетов Девайс">
+        <img class="page-footer-contacts-logo" src="img/logo-yellow.svg" width="145" height="36"
+          alt="Логотип интернет-магазина гаджетов Девайс">
       </a>
       <address class="page-footer-contacts-address">
         <p class="page-footer-contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -253,7 +262,7 @@
     <section class="page-footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="page-footer-social-list">
-        <li class="page-footer-social-item">
+        <li class="page-footer-social-item facebook">
           <a class="social-link" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Фейсбук</span>
           </a>
@@ -277,7 +286,8 @@
       </address>
     </section>
     <a class="page-footer-htmlacademy-link" href="https://htmlacademy.ru/">
-      <img class="page-footer-htmlacademy-logo" src="" alt="Логотип HTML Academy">
+      <img class="page-footer-htmlacademy-logo" src="img/html-academy-logo.svg" width="115" height="34"
+        alt="Логотип HTML Academy">
     </a>
   </footer>
 </body>

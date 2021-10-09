@@ -1,0 +1,57 @@
+.user::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/header-icons/user.svg");
+}
+
+.categories-item {
+  display: inline-block;
+  width: 160px;
+  height: 253px;
+}
+
+.categories-img {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.vr {
+  background-image: url("../img/categories/vr.svg");
+}
+
+.services-delivery::after {
+  content: "";
+  display: inline-block;
+  width: 136px;
+  height: 164px;
+  background-image: url("../img/services/delivery.svg");
+}
+
+/*Футеру фоновый цвет задал пока только для отображения иконки фейсбука*/
+.page-footer {
+  background-color: #444444;
+}
+
+.page-footer-social-item {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: inherit;
+}
+
+.facebook {
+  background-image: url("../img/social/facebook.svg");
+}

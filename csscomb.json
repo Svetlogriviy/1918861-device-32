@@ -10,7 +10,13 @@
     ],
     [
       "display",
+      "flex-direction",
+      "justify-content",
+      "flex-grow",
       "float",
+      "box-sizing",
+      "min-width",
+      "min-height",
       "width",
       "height",
       "margin",

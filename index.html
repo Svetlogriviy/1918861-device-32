@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header wrapper">
     <a class="header-logo-link">
       <img class="page-header-logo" src="img/logo-black.svg" width="145" height="36"
         alt="Логотип интернет-магазина гаджетов Девайс">
@@ -56,10 +56,10 @@
 
   <main class="main-container main-index">
     <h1 class="visually-hidden">Интернет-магазин гаджетов Девайс</h1>
-    <section class="promo-slider">
+    <section class="promo-slider wrapper">
       <h2 class="visually-hidden">Рекомендуем</h2>
       <div class="slider-image-container">
-        <img class="slider-image" src="img/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер">
+        <img class="slider-image active" src="img/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер">
         <img class="slider-image" src="img/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
         <img class="slider-image" src="img/slider/slider-3.png" width="560" height="560" alt="Палка для селфи">
         <button class="slider-button slider-prev" type="button">
@@ -71,49 +71,57 @@
       </div>
 
       <div class="slider-description-container">
-        <span class="slider-number">01</span>
-        <p class="promo-phrase">
-          Порхает как бабочка, жалит как пчела
-        </p>
-        <p class="promo-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-          замаскированным
-          под стандартную камеру.
-        </p>
-        <a class="promo-details-link" href="#">Подробнее</a>
-        <dl class="slider-feature-list">
-          <dt class="slider-feature">Дальность полёта</dt>
-          <dd class="slider-feature-value">800 м</dd>
-          <dt class="slider-feature">Радиус поражения</dt>
-          <dd class="slider-feature-value">50 м</dd>
-        </dl>
-        <span class="slider-number">02</span>
-        <p class="promo-phrase">
-          Худеем правильно!
-        </p>
-        <p class="promo-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
-          соблюдать диету.
-        </p>
-        <a class="promo-details-link" href="#">Подробнее</a>
-        <dl class="slider-feature-list">
-          <dt class="slider-feature">Без подзарядки</dt>
-          <dd class="slider-feature-value">48 часов</dd>
-        </dl>
-        <span class="slider-number">03</span>
-        <p class="promo-phrase">
-          Делай селфи, как Бен Стиллер!
-        </p>
-        <p class="promo-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
-          метров длиной и весом всего 5 кг.
-        </p>
-        <a class="promo-details-link" href="#">Подробнее</a>
-        <dl class="slider-feature-list">
-          <dt class="slider-feature">Длина палки</dt>
-          <dd class="slider-feature-value">8,5 м</dd>
-          <dt class="slider-feature">Вес палки</dt>
-          <dd class="slider-feature-value">5 кг</dd>
-          <dt class="slider-feature">Материал</dt>
-          <dd class="slider-feature-value">Карбон</dd>
-        </dl>
+        <ol class="slider-description-list">
+          <li class="slider-description-item active">
+            <span class="slider-number">01</span>
+            <p class="promo-phrase">
+              Порхает как бабочка, жалит как пчела
+            </p>
+            <p class="promo-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+              замаскированным
+              под стандартную камеру.
+            </p>
+            <a class="promo-details-link" href="#">Подробнее</a>
+            <dl class="slider-feature-list">
+              <dt class="slider-feature">Дальность полёта</dt>
+              <dd class="slider-feature-value">800 м</dd>
+              <dt class="slider-feature">Радиус поражения</dt>
+              <dd class="slider-feature-value">50 м</dd>
+            </dl>
+          </li>
+          <li class="slider-description-item">
+            <span class="slider-number">02</span>
+            <p class="promo-phrase">
+              Худеем правильно!
+            </p>
+            <p class="promo-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
+              соблюдать диету.
+            </p>
+            <a class="promo-details-link" href="#">Подробнее</a>
+            <dl class="slider-feature-list">
+              <dt class="slider-feature">Без подзарядки</dt>
+              <dd class="slider-feature-value">48 часов</dd>
+            </dl>
+          </li>
+          <li class="slider-description-item">
+            <span class="slider-number">03</span>
+            <p class="promo-phrase">
+              Делай селфи, как Бен Стиллер!
+            </p>
+            <p class="promo-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
+              метров длиной и весом всего 5 кг.
+            </p>
+            <a class="promo-details-link" href="#">Подробнее</a>
+            <dl class="slider-feature-list">
+              <dt class="slider-feature">Длина палки</dt>
+              <dd class="slider-feature-value">8,5 м</dd>
+              <dt class="slider-feature">Вес палки</dt>
+              <dd class="slider-feature-value">5 кг</dd>
+              <dt class="slider-feature">Материал</dt>
+              <dd class="slider-feature-value">Карбон</dd>
+            </dl>
+          </li>
+        </ol>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button pagination-button-current" type="button">
@@ -133,7 +141,7 @@
         </ol>
       </div>
     </section>
-    <section class="categories">
+    <section class="categories wrapper">
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="categories-list">
         <li class="categories-item">
@@ -163,7 +171,7 @@
       </ul>
     </section>
     <section class="services">
-      <div class="services-container">
+      <div class="services-container wrapper">
         <h2 class="visually-hidden">Сервисы</h2>
         <ul class="services-list">
           <li class="services-item">
@@ -177,7 +185,7 @@
           </li>
         </ul>
         <ul class=services-description-list>
-          <li class="services-description-item services-delivery">
+          <li class="services-description-item services-delivery active">
             <h3 class="service-name">Доставка</h3>
             <p class="service-description">Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно! Ведь
@@ -201,11 +209,11 @@
       </div>
 
     </section>
-    <section class="delivery-on-order">
+    <section class="delivery-on-order wrapper">
       <h2 class="visually-hidden">Доставка под заказ</h2>
       <a class="delivery-on-order-link" href="">Доставим редкий товар под заказ</a>
     </section>
-    <div class="about-contacts-container">
+    <div class="about-contacts-container wrapper">
       <section class="about">
         <h2 class="about-title">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -234,7 +242,7 @@
       </section>
     </div>
     <section class="newsletter">
-      <div class="newsletter-container">
+      <div class="newsletter-container wrapper">
         <div class="newsletter-left-column">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <form class="newsletter-form" id="newsletter" action="https://echo.htmlacademy.ru/" method="post">
@@ -255,7 +263,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer-container">
+    <div class="page-footer-container wrapper">
       <section class="page-footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="footer-logo-link">

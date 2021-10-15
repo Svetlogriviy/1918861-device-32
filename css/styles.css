@@ -50,6 +50,11 @@
   overflow: hidden;
 } /*Вставил из кодгайда, чтоб лишнее не мешало*/
 
+.wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 html {
   height: 100%;
 }
@@ -69,16 +74,12 @@ body {
 }
 
 .page-header {
-  width: 1160px;
-  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 60px;
 
   color: #000000;
 
   background: linear-gradient(#ffffff 23px, #ffe17f 23px);
-}
-
-.header-logo-link {
-  margin-left: 61px;
 }
 
 .navigation-list {
@@ -92,7 +93,6 @@ body {
   display: flex;
   justify-content: space-between; /*Временно,  работа с мелкими сетками на следующем этапе*/
   width: 1075px;
-  margin-left: 60px;
 }
 
 .search-line {
@@ -136,7 +136,6 @@ body {
 .navigation-menu {
   display: flex;
   width: 1041px;
-  margin-left: 60px;
 
   letter-spacing: 0.2em;
 }
@@ -157,16 +156,29 @@ body {
 .promo-slider {
   display: flex;
   justify-content: space-between;
-  width: 1160px;
-  margin: 0 auto;
 }
 
 .slider-image-container {
   width: 560px;
 }
 
+.slider-image {
+  display: none;
+}
+
 .slider-description-container {
   width: 560px;
+}
+
+.slider-description-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.slider-description-item {
+  display: none;
 }
 
 .slider-number {
@@ -206,11 +218,6 @@ body {
   color: #000000;
 }
 
-.categories {
-  width: 1160px;
-  margin: 0 auto;
-}
-
 .categories-list {
   display: flex;
   justify-content: space-between;
@@ -222,7 +229,6 @@ body {
 
 .categories-item {
   width: 160px;
-  height: 253px;
 }
 
 .categories-link {
@@ -240,8 +246,6 @@ body {
 
 .services-container {
   display: flex;
-  width: 1160px;
-  margin: 0 auto;
 }
 
 .services-list {
@@ -278,6 +282,10 @@ body {
   list-style-type: none;
 }
 
+.services-description-item {
+  display: none;
+}
+
 .service-name {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
@@ -286,22 +294,11 @@ body {
   color: #000000;
 }
 
-.delivery-on-order {
-  width: 1160px;
-  height: 100px;
-  margin: 0 auto;
-
-  background:
-    url("../img/delivery-car.svg") left 39px top 35px no-repeat,
-    linear-gradient(to right, #ffe17f 125px, #f0f0f0 125px);
-}
-
 .delivery-on-order-link {
   display: inline-block;
-  box-sizing: border-box;
   width: 1160px;
-  height: 100px;
   padding-top: 37px;
+  padding-bottom: 43px;
 
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -312,13 +309,15 @@ body {
   letter-spacing: 0.2em;
   text-decoration: none;
   text-transform: uppercase;
+
+  background:
+    url("../img/delivery-car.svg") left 39px top 35px no-repeat,
+    linear-gradient(to right, #ffe17f 125px, #f0f0f0 125px);
 }
 
 .about-contacts-container {
   display: flex;
   justify-content: space-between;
-  width: 1160px;
-  margin: 0 auto;
 }
 
 .about {
@@ -394,8 +393,6 @@ body {
 
 .newsletter-container {
   display: flex;
-  width: 1160px;
-  margin: 0 auto;
 }
 
 .newsletter-left-column {
@@ -446,8 +443,6 @@ body {
 
 .page-footer-container {
   display: flex;
-  width: 1160px;
-  margin: 0 auto;
 }
 
 .page-footer-contacts {
@@ -733,4 +728,8 @@ body {
 
 .facebook {
   background-image: url("../img/social/facebook.svg");
+}
+
+.active {
+  display: revert;
 }

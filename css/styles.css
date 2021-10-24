@@ -213,7 +213,7 @@ body {
   letter-spacing: 0.2em;
 
   border: 2px solid #ffe17f;
-  border-radius: 25px;;
+  border-radius: 25px;
 }
 
 .navigation-list {
@@ -1207,4 +1207,8 @@ body {
 
 .active {
   display: revert;
+}
+
+input::-webkit-search-cancel-button {
+  display: none;
 }

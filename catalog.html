@@ -73,7 +73,7 @@
           </div>
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость</legend>
+              <legend class="catalog-filter-title">Стоимость</legend> <!--Не знаю, можно ли вытащить legend из рамки, если нет, возможно, лучше будет убрать его и сделать через заголовок-->
               <button class="range-toggle toggle-min">
                 <span class="visually-hidden">Изменить минимальную цену</span>
               </button>
@@ -167,36 +167,52 @@
           <h2 class="visually-hidden">Список товаров</h2>
           <ul class="product-list">
             <li class="product-item">
-              <a class="product-link" href="#">
+              <a class="product-link product-link-image" href="#">
                 <img class="product-image" src="img/catalog/product-1.jpg" width="360" height="380" alt="">
                 <span class="product-details">Подробнее</span>
-                <h3 class="product-title">Любительская селфи-палка</h3>
               </a>
-              <span class="product-price">500 &#8381;</span>
+              <div class="product-item-text">
+                <a class="product-link" href="#">
+                  <h3 class="product-title">Любительская селфи-палка</h3>
+                </a>
+                <span class="product-price">500 &#8381;</span>
+              </div>
             </li>
             <li class="product-item">
-              <a class="product-link" href="#">
+              <a class="product-link product-link-image" href="#">
                 <img class="product-image" src="img/catalog/product-2.jpg" width="360" height="380" alt="">
                 <b class="product-details">Подробнее</b>
-                <h3 class="product-title">Профессиональная селфи-палка</h3>
               </a>
-              <span class="product-price">1500 &#8381;</span>
+              <div class="product-item-text">
+                <a class="product-link" href="#">
+                  <h3 class="product-title">Профессиональная селфи-палка</h3>
+                </a>
+                <span class="product-price">1500 &#8381;</span>
+              </div>
             </li>
             <li class="product-item">
-              <a class="product-link" href="#">
+              <a class="product-link product-link-image" href="#">
                 <img class="product-image" src="img/catalog/product-3.jpg" width="360" height="380" alt="">
                 <b class="product-details">Подробнее</b>
-                <h3 class="product-title">Непотопляемая селфи-палка</h3>
               </a>
-              <span class="product-price">2500 &#8381;</span>
+              <div class="product-item-text">
+                <a class="product-link" href="#">
+                  <h3 class="product-title">Непотопляемая селфи-палка</h3>
+                </a>
+                <span class="product-price">2500 &#8381;</span>
+              </div>
             </li>
             <li class="product-item">
-              <a class="product-link" href="#">
+              <a class="product-link product-link-image " href="#">
                 <img class="product-image" src="img/catalog/product-4.jpg" width="360" height="380" alt="">
                 <b class="product-details">Подробнее</b>
-                <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
               </a>
-              <span class="product-price">4900 &#8381;</span>
+              <div class="product-item-text">
+                <a class="product-link" href="#">
+                  <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
+                </a>
+                <span class="product-price">4900 &#8381;</span>
+              </div>
             </li>
           </ul>
           <button class="button-product-more" type="button">Загрузить ещё</button>

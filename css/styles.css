@@ -94,6 +94,10 @@ body {
   margin-bottom: 26px;
 }
 
+.header-logo-link:focus {
+  outline: none;
+}
+
 .page-header-logo {
   display: block;
 }
@@ -151,8 +155,8 @@ body {
 }
 
 .search-line:focus {
-  outline: none;
   border-color: #af4fff;
+  outline: none;
 }
 
 .search-line:valid {
@@ -674,6 +678,7 @@ body {
 
 .categories-link:focus-visible {
   color: #af4fff;
+
   outline: none;
 }
 
@@ -1331,6 +1336,10 @@ body {
   margin-bottom: 35px;
 }
 
+.footer-logo-link:focus {
+  outline: none;
+}
+
 .footer-logo {
   display: block;
 }
@@ -1649,13 +1658,50 @@ body {
   list-style-type: none;
 }
 
+.breadcrumbs-item:first-child {
+  margin-left: -13px;
+}
+
 .breadcrumbs-item:not(:last-child) {
-  margin-right: 36px;
+  margin-right: 11px;
 }
 
 .breadcrumbs-link {
+  position: relative;
+
+  display: block;
+  padding-top: 5px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+  padding-left: 13px;
+
   color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
+}
+
+.breadcrumbs-item:not(:first-child) .breadcrumbs-link::before {
+  position: absolute;
+  top: 12px;
+  left: -6px;
+
+  width: 4px;
+  height: 7px;
+
+  background-image: url("../img/breadcrumbs-arrow.svg");
+
+  content: "";
+}
+
+.breadcrumbs-link:focus-visible {
+  outline: 5px solid #af4fff;
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-container {
@@ -1781,7 +1827,15 @@ body {
   margin-bottom: 0;
 }
 
-.filter-submit-batton {
+.filter-submit-button {
+  position: relative;
+  z-index: 0;
+
+  width: 200px;
+  padding: 0;
+  padding-top: 9px;
+  padding-bottom: 10px;
+
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -1790,6 +1844,57 @@ body {
   color: #000000;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+.filter-submit-button::after {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  z-index: -1;
+
+  width: 200px;
+  height: 8px;
+
+  background-color: #ffc700;
+
+  content: "";
+}
+
+.filter-submit-button:focus {
+  outline: none;
+}
+
+.filter-submit-button:focus-visible::after {
+  background-color: #af4fff;
+}
+
+.filter-submit-button:hover::after {
+  top: 0;
+  left: 0;
+
+  width: 200px;
+  height: 40px;
+
+  background-color: #ffc700;
+}
+
+.filter-submit-button:active {
+  color: #ffe17f;
+}
+
+.filter-submit-button:active::after {
+  top: 0;
+  left: 0;
+
+  width: 200px;
+  height: 40px;
+
+  background-color: #000000;;
 }
 
 .sorting-container {
@@ -1852,17 +1957,38 @@ body {
 }
 
 .product-link {
+  display: block;
+
   color: #000000;
   text-decoration: none;
 }
 
+.product-link:focus {
+  outline: none;
+}
+
 .product-link-image {
+  position: relative;
+
   display: block;
   margin-bottom: 32px;
 }
 
+.product-image {
+  display: block;
+}
+
 .product-details {
-  display: none;
+  position: absolute;
+  top: 170px;
+  right: 0;
+  left: 0;
+  z-index: 0;
+
+  width: 180px;
+  margin: auto;
+  padding-top: 9px;
+  padding-bottom: 10px;
 
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -1871,6 +1997,76 @@ body {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+
+  visibility: hidden;
+}
+
+.product-details::before {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  z-index: -1;
+
+  width: 180px;
+  height: 8px;
+
+  background-color: #ffc700;
+
+  content: "";
+}
+
+.product-link-image:focus-visible::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  box-sizing: border-box;
+  width: 360px;
+  height: 380px;
+
+  border: 5px solid #af4fff;
+
+  content: "";
+}
+
+.product-link-image:focus-visible + .product-item-text,
+.product-link-image:focus-visible + .product-item-text .product-link {
+  color: #af4fff;
+}
+
+.product-link-image:hover::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 360px;
+  height: 380px;
+
+  background-color: rgba(240, 240, 240, 0.8);
+
+  content: "";
+}
+
+.product-link-image:hover .product-details {
+  visibility: visible;
+}
+
+.product-details:hover::before {
+  top: 0;
+  left: 0;
+
+  height: 40px;
+}
+
+.product-details:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.product-details:active::before {
+  top: 0;
+  left: 0;
+
+  height: 40px;
 }
 
 .product-item-text {
@@ -1911,11 +2107,26 @@ body {
 
   background: none;
   border: 3px solid rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+}
+
+.button-product-more:focus-visible {
+  border: 5px solid #af4fff;
+  outline: none;
+}
+
+.button-product-more:hover {
+  border: 3px solid #000000;
+}
+
+.button-product-more:active {
+  border: 3px solid #000000;
+  opacity: 0.3;
 }
 
 .product-pagination {
   display: flex;
-  gap: 30px;
   align-items: center;
   width: 760px;
   margin: 0;
@@ -1926,10 +2137,20 @@ body {
   list-style-type: none;
 }
 
+.product-pagination-item:nth-child(2) ~ .product-pagination-item:not(:last-child) {
+  margin-left: 2px;
+}
+
 .product-pagination-link {
+  display: block;
+
   font-size: 16px;
   line-height: 19px;
   text-decoration: none;
+}
+
+.product-pagination-link:focus {
+  outline: none;
 }
 
 .product-pagination-prev {
@@ -1941,15 +2162,20 @@ body {
 }
 
 .page-number {
+  box-sizing: border-box;
+  width: 38px;
+  padding-top: 3px;
+  padding-bottom: 6px;
+
+  text-align: center;
   color: rgba(68, 68, 68, 0.3);
 }
 
 .pagination-prev-link,
 .pagination-next-link {
-  display: block;
-  padding-top: 27px;
+  padding-top: 24px;
   padding-right: 29px;
-  padding-bottom: 24px;
+  padding-bottom: 27px;
   padding-left: 29px;
 
   font-family: "Raleway", sans-serif;
@@ -1957,6 +2183,37 @@ body {
   color: #000000;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.pagination-prev-link:focus-visible,
+.pagination-next-link:focus-visible {
+  outline: 5px solid #af4fff;
+
+  outline-offset: -5px;
+}
+
+.pagination-prev-link:hover,
+.pagination-next-link:hover {
+  background-color: #dcdcdc;
+}
+
+.pagination-prev-link:active,
+.pagination-next-link:active {
+  color:rgba(0, 0, 0, 0.3);
+
+  background-color: #dcdcdc;
+}
+
+.page-number:focus-visible {
+  border: 5px solid #af4fff;
+}
+
+.page-number:hover {
+  color: rgba(68, 68, 68, 1);
+}
+
+.page-number:active {
+  color: rgba(68, 68, 68, 0.1);
 }
 
 /*Декоративные изображения*/

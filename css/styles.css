@@ -55,12 +55,6 @@
   margin: 0 auto;
 }
 
-button:focus,
-input:focus,
-a:focus {
-  outline: none;;
-}
-
 html {
   height: 100%;
 }
@@ -157,6 +151,7 @@ body {
 }
 
 .search-line:focus {
+  outline: none;
   border-color: #af4fff;
 }
 
@@ -188,6 +183,7 @@ body {
 
 .search-button:focus-visible {
   border-color: #af4fff;
+  outline: none;
 }
 
 .search-button:hover {
@@ -319,6 +315,10 @@ body {
   background-repeat: no-repeat;
   border: 2px solid #ffe17f;
   border-radius: 20px;
+}
+
+.navigation-link:focus {
+  outline: none;
 }
 
 .navigation-user .navigation-link:focus-visible {
@@ -564,11 +564,14 @@ body {
   height: 8px;
 
   background-color: #ffe17f;
+  outline: none;
 
   content: "";
 }
 
-
+.promo-details-link:focus {
+  outline: none;
+}
 
 .promo-details-link:focus-visible::before {
   background-color: #af4fff;
@@ -671,6 +674,7 @@ body {
 
 .categories-link:focus-visible {
   color: #af4fff;
+  outline: none;
 }
 
 .categories-link:focus-visible::before {
@@ -774,6 +778,10 @@ body {
   background-color: #000000;
 
   content: "";
+}
+
+.services-button:focus {
+  outline: none;
 }
 
 .services-button:focus-visible::after {
@@ -1081,6 +1089,10 @@ body {
   content: "";
 }
 
+.about-contacts-link:focus {
+  outline: none;
+}
+
 .about-contacts-link:focus-visible::before {
   background-color: #af4fff;
 }
@@ -1130,6 +1142,18 @@ body {
   font-style: normal;
   font-weight: 400;
   color: #000000;
+}
+
+.contacts-phone:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.contacts-phone:hover {
+  opacity: 0.6;
+}
+
+.contacts-phone:active {
+  opacity: 0.3;
 }
 
 .working-hours-list {
@@ -1210,6 +1234,7 @@ body {
 
 .newsletter-email-field:focus {
   background-color: #dcdcdc;
+  outline: none;
 }
 
 .newsletter-email-field:hover {
@@ -1252,6 +1277,7 @@ body {
 
 .newsletter-button:focus-visible {
   border-color: #af4fff;
+  outline: none;
 }
 
 .newsletter-button:hover {
@@ -1373,6 +1399,10 @@ body {
   text-decoration: none;
 }
 
+.footer-navigation-link:focus {
+  outline: none;
+}
+
 .footer-navigation-link:focus-visible::before {
   position: absolute;
   top: 0;
@@ -1465,6 +1495,7 @@ body {
 .social-link:focus-visible {
   background-color: #444444;
   border-color: #af4fff;
+  outline: none;
 }
 
 .social-link:focus-visible .social-img {
@@ -1522,7 +1553,8 @@ body {
 }
 
 .footer-contacts-phone:focus-visible {
-  border-color: #af4fff
+  border-color: #af4fff;
+  outline: none;
 }
 
 .footer-contacts-phone:hover {
@@ -1566,6 +1598,7 @@ body {
 
 .footer-htmlacademy-link:focus-visible {
   border-color: #af4fff;
+  outline: none;
 }
 
 .footer-htmlacademy-link:hover {

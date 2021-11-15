@@ -19,7 +19,31 @@
           <input class="search-line" type="search" name="querry" id="search" placeholder="Поиск по сайту" required>
           <button class="search-button" type="submit">Найти</button>
         </form>
-        <a class="navigation-link navigation-catalog" href="#">Каталог товаров</a>
+        <div class="header-catalog-container">
+          <a class="navigation-link navigation-catalog" href="#">Каталог товаров</a>
+          <div class="catalog-popover">
+            <ul class="subcatalog">
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="catalog.html">Моноподы для селфи</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Умные часы</a>
+              </li>
+              <li class="subcatalog-item">
+                <a class="subcatalog-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="header-right-column">
         <ul class="navigation-list navigation-user">
@@ -34,6 +58,36 @@
           </li>
           <li class="navigation-item cart">
             <a class="navigation-link navigation-link-cart" href="#">Корзина</a>
+            <div class="popover">
+              <div class="popover-content">
+                <h2 class="visually-hidden">Корзина</h2>
+                <ul class="cart-list">
+                  <li class="cart-list-item">
+                    <a class="cart-item-link" href="#">
+                      <img class="cart-item-img" src="img/catalog/product-1.jpg" width="41" height="43" alt="">
+                      <h3 class="cart-item-title">Любительская селфи-палка</h3>
+                    </a>
+                    <button class="cart-item-delete">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-list-item">
+                    <a class="cart-item-link" href="#">
+                      <img class="cart-item-img" src="img/catalog/product-2.jpg" width="41" height="43" alt="">
+                      <h3 class="cart-item-title">Профессиональная селфи-палка</h3>
+                    </a>
+                    <button class="cart-item-delete">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="total">
+                  <p class="number-of-item">Товаров: 2</p>
+                  <p class="total-sum">Сумма: 2000 &#8381;</p>
+                </div>
+                <a class="open-cart-link" href="#">Открыть корзину</a>
+              </div>
+            </div>
           </li>
         </ul>
         <ul class="navigation-list navigation-menu">
@@ -56,15 +110,25 @@
     <section class="promo-slider wrapper">
       <h2 class="visually-hidden">Рекомендуем</h2>
       <div class="slider-image-container">
-        <img class="slider-image active" src="img/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер">
-        <img class="slider-image" src="img/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
-        <img class="slider-image" src="img/slider/slider-3.png" width="560" height="560" alt="Палка для селфи">
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
+        <ol class="slider-image-list">
+          <li class="slider-image-item active">
+            <img class="slider-image" src="img/slider/slider-1.png" width="560" height="560" alt="Квадрокоптер">
+          </li>
+          <li class="slider-image-item">
+            <img class="slider-image" src="img/slider/slider-2.png" width="560" height="560" alt="Фитнес-браслет">
+          </li>
+          <li class="slider-image-item">
+            <img class="slider-image" src="img/slider/slider-3.png" width="560" height="560" alt="Палка для селфи">
+          </li>
+        </ol>
+        <div class="slider-controls">
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+        </div>
       </div>
 
       <div class="slider-description-container">
@@ -216,8 +280,8 @@
       <h2 class="visually-hidden">Доставка под заказ</h2>
       <a class="delivery-on-order-link" href="">
         <svg class="delivery-car" aria-hidden="true" focusable="false" width="47" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="m46.7 15.4-6.5-8.2c-.3-.4-.7-.6-1.2-.6h-8.3V1.5C30.7.7 30 0 29.2 0H1.5C.7 0 0 .7 0 1.5S.7 3 1.5 3h26.2v21.7H15.8a4.7 4.7 0 0 0-4.5-3.3 4.9 4.9 0 0 0-4.8 4.8c0 2.6 2.2 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h13.4c.8 0 1.5-.7 1.5-1.5V9.6h7.6l5.7 7.3v7.9h-2.2a4.7 4.7 0 0 0-4.5-3.3 4.9 4.9 0 0 0-4.8 4.8c0 2.6 2.1 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h3.7c.8 0 1.5-.7 1.5-1.5v-9.9c0-.4-.1-.7-.3-1ZM11.3 28c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Zm26.1 0c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Z" fill="#000"/>
-          <path d="M19.4 9.6c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5H4.8c-.8 0-1.5.7-1.5 1.5S4 9.6 4.8 9.6h14.6Zm-1.7 5.1c0-.8-.7-1.5-1.5-1.5H1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.7c.8 0 1.5-.7 1.5-1.5Z" fill="#000"/>
+          <path d="m46.7 15.4-6.5-8.2c-.3-.4-.7-.6-1.2-.6h-8.3V1.5C30.7.7 30 0 29.2 0H1.5C.7 0 0 .7 0 1.5S.7 3 1.5 3h26.2v21.7H15.8a4.7 4.7 0 0 0-4.5-3.3 4.9 4.9 0 0 0-4.8 4.8c0 2.6 2.2 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h13.4c.8 0 1.5-.7 1.5-1.5V9.6h7.6l5.7 7.3v7.9h-2.2a4.7 4.7 0 0 0-4.5-3.3 4.9 4.9 0 0 0-4.8 4.8c0 2.6 2.1 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h3.7c.8 0 1.5-.7 1.5-1.5v-9.9c0-.4-.1-.7-.3-1ZM11.3 28c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Zm26.1 0c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Z" fill="#000" />
+          <path d="M19.4 9.6c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5H4.8c-.8 0-1.5.7-1.5 1.5S4 9.6 4.8 9.6h14.6Zm-1.7 5.1c0-.8-.7-1.5-1.5-1.5H1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.7c.8 0 1.5-.7 1.5-1.5Z" fill="#000" />
         </svg>
         Доставим редкий товар под заказ
       </a>
@@ -305,7 +369,7 @@
               <a class="social-link facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
                 <svg class="social-img" aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0v3h2v9h3V9h3.3l.6-3H5V4.5C5 3.7 5.3 3 6.5 3Z"/>
+                  <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0v3h2v9h3V9h3.3l.6-3H5V4.5C5 3.7 5.3 3 6.5 3Z" />
                 </svg>
               </a>
             </li>
@@ -313,7 +377,7 @@
               <a class="social-link instagram" href="https://www.instagram.com/htmlacademy/">
                 <span class="visually-hidden">Инстаграм</span>
                 <svg class="social-img" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14.7 1.3c-.9-.9-2-1.3-3.4-1.3H4.7A4.5 4.5 0 0 0 0 4.7v6.6c0 1.4.4 2.6 1.4 3.4.9.9 2 1.3 3.3 1.3h6.6c1.4 0 2.6-.4 3.4-1.3a5 5 0 0 0 1.3-3.4V4.7c0-1.4-.4-2.6-1.3-3.4ZM8 12.1A4.1 4.1 0 0 1 3.9 8c0-2.3 1.9-4.1 4.1-4.1 2.2 0 4.1 1.8 4.1 4.1s-1.9 4.1-4.1 4.1Zm4.6-7.4c-.7 0-1.3-.5-1.3-1.3s.5-1.3 1.3-1.3c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3Z"/>
+                  <path d="M14.7 1.3c-.9-.9-2-1.3-3.4-1.3H4.7A4.5 4.5 0 0 0 0 4.7v6.6c0 1.4.4 2.6 1.4 3.4.9.9 2 1.3 3.3 1.3h6.6c1.4 0 2.6-.4 3.4-1.3a5 5 0 0 0 1.3-3.4V4.7c0-1.4-.4-2.6-1.3-3.4ZM8 12.1A4.1 4.1 0 0 1 3.9 8c0-2.3 1.9-4.1 4.1-4.1 2.2 0 4.1 1.8 4.1 4.1s-1.9 4.1-4.1 4.1Zm4.6-7.4c-.7 0-1.3-.5-1.3-1.3s.5-1.3 1.3-1.3c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3Z" />
                 </svg>
               </a>
             </li>
@@ -321,7 +385,7 @@
               <a class="social-link twitter" href="https://www.twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твиттер</span>
                 <svg class="social-img" aria-hidden="true" focusable="false" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.7.1c1.5-.5 2.6.3 3.2 1.1l1.7-.6a2 2 0 0 1-.8 1.6c.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4C4 14 .6 13.6 0 12.2c2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2C1.5 7.7.3 7 .4 5c.3.3.9.5 1.2.4C1 5.2-.2 2.3.8.8c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"/>
+                  <path d="M9.7.1c1.5-.5 2.6.3 3.2 1.1l1.7-.6a2 2 0 0 1-.8 1.6c.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4C4 14 .6 13.6 0 12.2c2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2C1.5 7.7.3 7 .4 5c.3.3.9.5 1.2.4C1 5.2-.2 2.3.8.8c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" />
                 </svg>
               </a>
             </li>
@@ -337,12 +401,51 @@
         </section>
         <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/">
           <svg class="htmlacademy-img" aria-hidden="true" focusable="false" width="115" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 12.9v2.6h2.5v-2.6H0Zm11.6-8.4c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9Zm15 .3h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2Zm14.5-.2c-1.6 0-2.9.8-3.5 2.1h-.1a3.7 3.7 0 0 0-3.4-2.1c-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3Zm6.7 8.1c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7Zm-18.9 7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1V22Zm10.9-2.3a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6Zm17.2-7.3a5 5 0 0 0-3.9-1.9c-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6Zm13.2-9.2a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5a3.2 3.2 0 0 1 3.2-2.6Zm19.9-1.9a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4Zm11.2 9.1-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/>
+            <path d="M0 12.9v2.6h2.5v-2.6H0Zm11.6-8.4c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9Zm15 .3h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2Zm14.5-.2c-1.6 0-2.9.8-3.5 2.1h-.1a3.7 3.7 0 0 0-3.4-2.1c-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3Zm6.7 8.1c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7Zm-18.9 7a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3 3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6 1.6 0 2.8 1 3.3 2.2h2.1V22Zm10.9-2.3a4.9 4.9 0 0 0-3.9-1.8c-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6Zm17.2-7.3a5 5 0 0 0-3.9-1.9c-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3a3.5 3.5 0 0 1-3.6-3.6c0-2 1.4-3.6 3.6-3.6s3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6Zm13.2-9.2a5.4 5.4 0 0 0-5.5 5.6c0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5a3.2 3.2 0 0 1 3.2-2.6Zm19.9-1.9a4 4 0 0 0-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4Zm11.2 9.1-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
           </svg>
         </a>
       </div>
     </div>
   </footer>
+  <div class="modal-container modal-container-close">
+    <div class="modal">
+      <button class="modal-close">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+      <h2 class="modal-title">Доставка под заказ</h2>
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="modal-label label-name" for="modal-name">Ваше имя:</label>
+        <input class="modal-input input-name" type="text" name="name" id="modal-name" placeholder="Имя Фамилия" required>
+        <p class="under-text under-name-text">Пожалуйста, представьтесь</p>
+        <label class="modal-label label-email" for="modal-email">Ваш e-mail:</label>
+        <input class="modal-input input-email" type="email" name="email" id="modal-email" placeholder="Введите e-mail" required>
+        <p class="under-text under-email-text">Забавный у вас адрес</p>
+        <label class="modal-label label-request" for="modal-request">Что нужно привезти:</label>
+        <input class="modal-input input-request" type="text" name="request" id="modal-request" placeholder="В свободной форме" required>
+        <div class="label-number-container">
+          <label class="modal-label label-number" for="modal-number">Количество:</label>
+          <button class="info-button">
+            <span class="visually-hidden">Дополнительная информация</span>
+          </button>
+          <div class="info-popover">
+            <p class="info-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+          </div>
+        </div>
+        <div class="modal-number-group">
+          <input class="modal-input input-number" type="number" name="number" id="modal-number" value="1" required>
+
+            <button class="number-group-button number-minus" type="button">
+              <span class="visually-hidden">Убавить</span>
+            </button>
+            <button class="number-group-button number-plus" type="button">
+              <span class="visually-hidden">Прибавить</span>
+            </button>
+
+        </div>
+        <button class="modal-form-submit" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>

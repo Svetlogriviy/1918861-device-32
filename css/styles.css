@@ -2362,21 +2362,29 @@ body {
   padding-left: 37px;
 }
 
-.control:hover .control-input:checked + .control-mark {
+.control:hover .control-input:checked:not(:disabled) + .control-mark {
   opacity: 0.5;
 }
 
-.control:hover .control-input:checked ~ .control-label {
+.control:hover .control-input:checked:not(:disabled) ~ .control-label {
   opacity: 0.5;
 }
 
-.control:active .control-input:checked + .control-mark {
+.control:active .control-input:checked:not(:disabled) + .control-mark {
   opacity: 0.2;
 }
 
-.control:active .control-input:checked ~ .control-label,
-.control:active .control-input ~ .control-label {
+.control:active .control-input:checked:not(:disabled) ~ .control-label,
+.control:active .control-input:not(:disabled) ~ .control-label {
   opacity: 0.2;
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 0.3;
+}
+
+.control-input:disabled ~ .control-label {
+  opacity: 0.3;
 }
 
 .control-mark {

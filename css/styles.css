@@ -62,7 +62,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-width: 1440px;
+  min-width: 1200px;
   min-height: 100%;
   margin: 0;
 
@@ -2055,7 +2055,9 @@ img {
 
 .footer-contacts-phone {
   display: block;
+  width: fit-content;
   margin-right: -15px;
+  margin-left: auto;
   padding-top: 1px;
   padding-right: 13px;
   padding-bottom: 3px;
